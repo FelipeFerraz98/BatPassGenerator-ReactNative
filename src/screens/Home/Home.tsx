@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { styles } from "./styles";
 import { BatLogo } from "../../components/BatLogo/BatLogo";
+import { BatTextInput } from "../../components/BatTextInput/BatTextInput";
 
 export default function Home() {
     return(
@@ -9,7 +10,10 @@ export default function Home() {
             <View style={styles.logoContainer}>
                 <BatLogo />
             </View>
-            <Text>Home works!!</Text>
+
+            <View style={styles.inputContainer}>
+                <BatTextInput />
+            </View>
         </View>
     )
 }
